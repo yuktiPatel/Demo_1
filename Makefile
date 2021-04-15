@@ -9,7 +9,7 @@ TEST = Unity/unity.c
 
 ifdef OS
 	RM = del/q
-	FixPath = $(subset /,\,$1)
+	FixPath = $(subst /,\,$1)
 	EXEC = exe
 
 else
